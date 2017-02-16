@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginTop="2dp"
+    card_view:cardElevation="3sp"
+    card_view:cardUseCompatPadding="true"
+    >
+
+    <LinearLayout
+        android:id="@+id/lo_item_specials_offers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/imgPoster_item_specials_offers"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/earth_2049"
+            />
+
+        <TextView
+            android:id="@+id/txtConten_item_destination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="@dimen/textSize_2"
+            android:textStyle="bold"
+            android:lines="3"
+            />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+

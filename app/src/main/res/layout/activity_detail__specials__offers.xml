@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail_resort"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    tools:context="com.hbbsolution.ppctimeshare.view.detail_resort_tan.DetailResortActivity">
+
+
+    <include layout="@layout/toolbarbackhome"></include>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_detail_specials"
+        android:src="@drawable/earth_2049"
+        android:scaleType="centerCrop"
+        android:layout_weight="3.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </android.support.v4.view.ViewPager>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+            android:layout_weight="6.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/txtName_detail_specials"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Name Resort"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textAreaScroller"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+
+                >
+                <TextView
+                    android:paddingLeft="5dp"
+                    android:id="@+id/txtContent_detail_specials"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearance"
+                    android:text="@string/fbtext" />
+            </ScrollView>
+
+        </LinearLayout>
+
+</LinearLayout>

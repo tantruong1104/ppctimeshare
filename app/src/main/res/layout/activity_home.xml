@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hbbsolution.ppctimeshare.view.home_tan.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            app:titleTextColor="@android:color/white"
+            android:background="#E53935">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_weight="0.2"
+                    android:layout_width="wrap_content"
+                    android:contentDescription="User"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgUser"
+                    android:layout_gravity="left"
+                    android:src="@drawable/user"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:text="@string/home"
+                    android:textColor="@android:color/white"/>
+
+                <ImageView
+                    android:layout_weight="0.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Setting"
+                    android:id="@+id/imgSetting"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/setting"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg1"
+        >
+        <LinearLayout
+            android:background="#00FFFFFF"
+            android:orientation="vertical"
+            android:weightSum="5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/loResort"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                >
+                <FrameLayout
+                    android:layout_marginTop="100dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@drawable/line_home"
+                    >
+                <TextView
+                    android:text="RESORTS DIRECTORY"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <FrameLayout
+                        android:id="@+id/loPromotion"
+                        android:background="#E6feab4d"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_marginTop="15dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_swap_vert_black_24dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:background="#feab4d"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:text="Special Offers"
+                            android:textSize="21sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_gravity="bottom"
+                            android:textAlignment="center"/>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <FrameLayout
+                        android:id="@+id/loDiscover"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#E6f8cf00">
+                        <ImageView
+                            android:layout_marginTop="15dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_swap_vert_black_24dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:background="#f8cf00"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:text="Explore All Destination"
+                            android:textSize="20sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_gravity="bottom"
+                            android:textAlignment="center"/>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <FrameLayout
+                        android:id="@+id/loSuggest"
+                        android:background="#E6bfda00"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_marginTop="15dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_swap_vert_black_24dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:background="#bfda00"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:text="Places Nearby"
+                            android:textSize="20sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_gravity="bottom"
+                            android:textAlignment="center"/>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <FrameLayout
+                    android:id="@+id/loIntroduce"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:background="#C0CA33"
+                        android:text="Introduce"
+                        android:textSize="25sp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/loRecruitment"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_swap_vert_black_24dp"/>
+                        <TextView
+                            android:textColor="@color/white"
+                            android:textSize="25sp"
+                            android:text="Recruitment"
+                            android:layout_weight="1.00"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout
+                android:id="@+id/loSendRequest"
+                android:background="#CCECEFF1"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_swap_vert_black_24dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textColor="#E53935"
+                        android:textSize="25sp"
+                        android:text="Send request"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
+

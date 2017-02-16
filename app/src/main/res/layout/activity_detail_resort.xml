@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail_resort"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hbbsolution.ppctimeshare.view.detail_resort_tan.DetailResortActivity">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/foatbutton_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_location_on_white_24dp"
+        app:backgroundTint="#AEEA00"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <include layout="@layout/toolbarbackhome"></include>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:src="@drawable/earth_2049"
+            android:scaleType="centerCrop"
+            android:layout_weight="3.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        </android.support.v4.view.ViewPager>
+
+
+        <LinearLayout
+            android:layout_weight="0.8"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+            <Button
+
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#AEEA00"
+                android:gravity="center"
+                android:text="Book in Advance"
+                android:textSize="20dp"
+                android:textColor="#ffff"
+                android:textAllCaps="false"/>
+            <Button
+                android:background="#FFD740"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Book Online"
+                android:textSize="20dp"
+                android:textColor="#ffff"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="5.7"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/txtName_detail_project"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Name Resort"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/address"
+                    android:background="@null"/>
+                <TextView
+                    android:id="@+id/txtAddress_detail_project"
+                    android:gravity="center_vertical"
+                    android:text="244 Cong Quynh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/price"
+                    android:background="@null"/>
+
+                <TextView
+                    android:id="@+id/txtPrice_detail_project"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="244 Cong Quynh"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+            </LinearLayout>
+
+            <ScrollView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textAreaScroller"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:id="@+id/txtIntroduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearance"
+                    android:text="@string/fbtext" />
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
